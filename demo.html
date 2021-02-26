@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const str = "Geeks for Geeks"; 
+  
+  // Input from User 
+  const regex = prompt("Enter RegExp"); 
+
+  // Conversion from string to RegExp 
+  const reg = new RegExp(regex, "g"); 
+
+  // The match fn returns the array of strings  
+  // That match to RegExp 
+  const result = str.match(reg); 
+
+  if (result) console.log(result); 
+  else console.log("Not Found"); 
+    </script>
+</body>
+</html>
